@@ -46,5 +46,5 @@ int main()
     int min, max = arr[0];
     double avg;
     tomb(arr,&min, &max, &avg);
-    printf("min: %d, max: %d, avg: %.2lf\n", min, max, avg);
+    printf("\nmin: %d, max: %d, avg: %.2lf\n", min, max, avg);
 }

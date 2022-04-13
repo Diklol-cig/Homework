@@ -10,24 +10,24 @@ int randomint(int also, int felso)
    veletlen=also+veletlen;
    return veletlen;
 }
-void rendez(int meret, int tomb[])
-   {
-       int TMP;
-       int kesz=0;
-       while(kesz<meret)
-       {
-           for(int i=0;i<meret;i++)
-           {
-               if(tomb[i]>tomb[i+1])
-               {
-                   TMP=tomb[i];
-                   tomb[i]=tomb[i+1];
-                   tomb[i+1]=TMP;
-               }
-           }
-           kesz++;
-       }
-   }
+void sorted(const int meret, int tomb[])
+{
+    int TMP;
+    int kesz=0;
+    while(kesz<meret)
+    {
+        for(int i=0;i<meret;i++)
+        {
+            if(tomb[i]>tomb[i+1])
+            {
+                TMP=tomb[i];
+                tomb[i]=tomb[i+1];
+                tomb[i+1]=TMP;
+            }
+        }
+        kesz++;
+    }
+}
 int main()
 {
    int darabszam;
@@ -55,7 +55,7 @@ int main()
            }
        }
    }
-   rendez(darabszam,szamok);
+   sorted(darabszam,szamok);
    printf("A generalt szamok: ");
    for(int k=0;k<darabszam;k++) printf("%d ",szamok[k]);
 

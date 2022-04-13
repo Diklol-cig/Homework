@@ -62,13 +62,13 @@ x cucc(int arr[], x p)
 int main()
 {
     
-    srand(2022);
+    srand(56);
     int arr[10];
     feltolt(arr);
     kiir(arr);
     x p;
     x ki = cucc(arr, p);
-    printf("\n%d %d %.1lf", ki.min, ki.max, ki.avg);
+    printf("\nmin: %d max: %d avg:%.2lf", ki.min, ki.max, ki.avg);
     
     //printf("min: %d, max: %d, avg: %.2lf\n", p.min, p.max, p.avg);
     //printf("min: %d, max: %d, avg: %.2lf\n", p.min, p.max, p.avg);

@@ -4,20 +4,6 @@
 
 #define MAX 1000
 
-/*int get_number_of_lines(FILE fp)
-{
-    int counter = 0;
-    char sor1[MAX];
-    
-    while (fgets(sor1, MAX, fp) != NULL)
-    {
-        //sor[strlen(sor)-1] = '\0';
-        //printf("%s\n", sor);
-        counter++;
-    }
-    return counter;
-}*/
-
 int main(int argc, char* argv[])
 {
     char sor[MAX];
@@ -35,15 +21,13 @@ int main(int argc, char* argv[])
         exit(1);
     }
     
-int counter = 0;
+    int counter = 0;
+
     while (fgets(sor, MAX, fp) != NULL)
     {
-        //sor[strlen(sor)-1] = '\0';
-        //printf("%s\n", sor);
         counter++;
     }
     printf("%d", counter);
-    //get_number_of_lines(fp);
     fclose(fp);
     return 0;
 
